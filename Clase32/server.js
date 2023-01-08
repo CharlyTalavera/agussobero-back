@@ -68,7 +68,7 @@ const hbs = handlebars.create({
 });
 
 app.engine("hbs", hbs.engine);
-app.set("views", "./views");
+app.set("views", "/vercel/output/views");
 app.set("view engine", "hbs");
 
 app.use(cookieParser());
