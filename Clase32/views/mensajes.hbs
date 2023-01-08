@@ -1,0 +1,14 @@
+<div>
+    <h1>Centro de Mensajes</h1>
+
+    <ul>
+        {{#each mensaje}}
+        
+            <li> Autor: - {{this.author}} </li>
+            <li> Mensaje: - {{this.comment}} </li>
+            {{!-- <li> Foto: - <img src="{{this.foto}}" alt="prodImg" style="max-height: 75px"> </li> --}}
+            <br>
+            <hr>
+        {{/each}}
+    </ul>
+</div>

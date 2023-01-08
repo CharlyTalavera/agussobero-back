@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Logout Page</title>
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <div>
+        <h3>Sesión Terminada, hasta pronto {{user}}</h3>
+        <br>
+        <hr>
+        <!-- <input type="button" name="button login" id="button login" value="Login" onclick=`${res.redirect("/login")}`> -->
+        <a type="submit" href="/login">Login</a>
+    </div>
+<script>
+    setTimeout(()=>{
+        window.location = ("/login")
+    }, 2000)
+</script>
+<script src="../../server.js"></script>
+</body>
+
+</html>

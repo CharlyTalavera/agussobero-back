@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Global and Child Process</title>
+</head>
+<title>Process Info</title>
+  <style>
+    h1 {
+      color: blue;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    input {
+      float: left;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    form {
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    form .submit {
+      background-color: greenyellow;
+    }
+
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+  <h1>Process Info</h1>
+  <br>
+  <p>Argumentos de entrada: {{this.args}}</p>
+  <p>Nombre de la plataforma: {{this.os}}</p>
+  <p>Version de node.js: {{this.nodeVersion}}</p>
+  <p>Memoria total reservada: {{this.memoria}}</p>
+  <p>Path de ejecución: {{this.path}}</p>
+  <p>Process Id: {{this.processId}}</p>
+  <p>Carpeta del proyecto: {{this.carpeta}}</p>
+  <p>Nº de procesadores: {{this.procesadores}}</p>
+  <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+  {{!-- <script src="../server.js"></script> --}}
+</body>
+</html>

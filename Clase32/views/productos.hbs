@@ -1,0 +1,14 @@
+<div>
+    <h1>Datos Producto</h1>
+
+    <ul>
+        {{#each producto}}
+        
+            <li> Producto: - {{this.nombre}} </li>
+            <li> Precio: - {{this.precio}} </li>
+            <li> Foto: - <img src="{{this.foto}}" alt="prodImg" style="max-height: 75px"> </li>
+            <br>
+            <hr>
+        {{/each}}
+    </ul>
+</div>

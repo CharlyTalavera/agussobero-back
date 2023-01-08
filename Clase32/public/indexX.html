@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Registro Producto</title>
+</head>
+<title>Nuevo Producto</title>
+  <style>
+    h1 {
+      color: blue;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    input {
+      float: left;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    form {
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    form .submit {
+      background-color: greenyellow;
+    }
+
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h3 id="saludoUser"></h3>
+  <br>
+  <h1>Registro de Nuevo Producto</h1>
+    <form action="/"  method="POST" id="ingresarProducto">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre Producto">
+        <input type="text" name="precio" id="precio" placeholder="Precio Producto">
+        <input type="text" name="thumbnail" id="thumbnail" placeholder="Thumbnail Producto">
+        <label for="submit">Producto</label>
+        <input type="submit" value="Subir Producto" class="submit"/>
+    </form>
+  <div id="productos"></div>
+
+  <h1>Centro de Mensajes</h1>
+    <form action="/"  method="POST" id="ingresarMensaje">
+        <input type="text" name="email" id="email" placeholder="ingresar email ">
+        <input type="text" name="nombre" id="nombre" placeholder="ingresar nombre ">
+        <input type="text" name="apellido" id="apellido" placeholder="ingresar apellido ">
+        <input type="text" name="edad" id="edad" placeholder="ingresar edad ">
+        <input type="text" name="alias" id="alias" placeholder="ingresar alias ">
+        <input type="text" name="avatar" id="avatar" placeholder="ingresar avatar ">
+        <input type="text" name="mensaje" id="mensaje" placeholder="ingresar mensaje">
+        <input type="submit" class="submit"id="enviarMensaje">
+    </form>
+    <br>
+    <br>
+    <br>
+    <h1>Chat Mensajes</h1>
+    <div id="mensajes"></div>
+
+    <a type="submit" href="/logout">Logout Session</a>
+
+  <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
