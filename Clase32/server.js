@@ -8,7 +8,7 @@ const generadorMensajes = require("./utils/generadorMensajes");
 const dataMensajes = require("./dataBases/posts.json");
 const { normalize, schema, denormalize } = require("normalizr");
 
-console.log("Initializing server...");
+console.log("Initializing server.....");
 /* const productoRoutes = require("./routes/productos")
 const mensajeRoutes = require("./routes/mensajes") */
 /* const randomRoutes = require("./routes/random") */
